@@ -1,0 +1,51 @@
+{
+  "name": "react-router-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "react-router build",
+    "dev": "(set NODE_OPTIONS=--import ./instrument.server.mjs) && react-router dev",
+    "start": "NODE_OPTIONS='--import ./instrument.server.mjs' react-router-serve ./build/server/index.js",
+    "typecheck": "react-router typegen && tsc"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@react-router/node": "^7.5.3",
+    "@react-router/serve": "^7.5.3",
+    "@sentry/browser": "^9.22.0",
+    "@sentry/profiling-node": "^9.22.0",
+    "@sentry/react": "^9.22.0",
+    "@sentry/react-router": "^9.22.0",
+    "@syncfusion/ej2-base": "^29.2.4",
+    "@syncfusion/ej2-react-buttons": "^29.2.5",
+    "@syncfusion/ej2-react-charts": "^29.2.5",
+    "@syncfusion/ej2-react-dropdowns": "^29.2.5",
+    "@syncfusion/ej2-react-grids": "^29.2.5",
+    "@syncfusion/ej2-react-maps": "^29.2.4",
+    "@syncfusion/ej2-react-navigations": "^29.2.5",
+    "@syncfusion/ej2-react-splitbuttons": "^29.2.4",
+    "@types/canvas-confetti": "^1.9.0",
+    "appwrite": "^18.1.1",
+    "canvas-confetti": "^1.9.3",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
+    "isbot": "^5.1.27",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.5.3",
+    "stripe": "^18.2.1",
+    "tailwind-merge": "^3.3.0"
+  },
+  "devDependencies": {
+    "@react-router/dev": "^7.5.3",
+    "@tailwindcss/vite": "^4.1.4",
+    "@types/node": "^20",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "cross-env": "^7.0.3",
+    "tailwindcss": "^4.1.4",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.3",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
